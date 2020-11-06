@@ -11,3 +11,13 @@ The dispatcher servlet dispatches requests and responses to registered handlers 
 <br>
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/front-controller.png" alt="fc"><br>
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/dispatcher-servlet.png" alt="ds">
+
+## Error handling
+Because we are not using spring boot, but are rather augmenting a Java web application with Spring features we would actually need to use web.xml in this case.
+There is no Java Config equivalent for:  
+
+    <error-page>
+            <location>/error</location>
+    </error-page>
+    
+In this [example](https://www.baeldung.com/servlet-exceptions) we can see how to fetch the error message along with the status code and exception type.
