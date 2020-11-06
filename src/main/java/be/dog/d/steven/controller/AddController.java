@@ -17,8 +17,8 @@ public class AddController {
 
     @RequestMapping("/add")
     public ModelAndView add(
-            @RequestParam("t1") @Pattern(message = "That is not a whole number.", regexp = "^\\d+$") String i,
-            @RequestParam("t2") @Pattern(message = "That is not a whole number.", regexp = "^\\d+$") String j,
+            @RequestParam("t1") @Pattern(message = "That is not a whole number.", regexp = "-?[1-9]\\d*|0") String i,
+            @RequestParam("t2") @Pattern(message = "That is not a whole number.", regexp = "-?[1-9]\\d*|0") String j,
             HttpServletRequest request, HttpServletResponse response){
 
 //        int i = Integer.parseInt(request.getParameter("t1"));
