@@ -1,3 +1,4 @@
+<%--@elvariable id="result" type="int"--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -11,7 +12,10 @@
 </head>
 <body>
 
-Result of addition = <%= request.getAttribute("result")%>
+<%--JSP-script:--%>
+<%--Result of addition = <%= request.getAttribute("result")%>--%>
+<%--Expression language:--%>
+Result of addition = ${result}
 
 </body>
 </html>
