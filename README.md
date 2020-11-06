@@ -8,5 +8,5 @@ the front-controller that has been doing all the hard work in our Spring project
 ## Dispatcher Servlet
 As its name suggests, it is a central dispatcher for HTTP request handlers/controllers, e.g. for web UI controllers or HTTP-based remote service exporters.
 The dispatcher servlet dispatches requests and responses to registered handlers for processing, providing convenient mapping and exception handling facilities.  
-<img width="500" src="https://docs.spring.io/spring-framework/docs/3.0.0.RC2/spring-framework-reference/html/images/mvc.png.pagespeed.ce.tmIzOTr1gg.png" alt="fc"><br>
-<img width="500" src="https://www.tutorialspoint.com/spring/images/spring_dispatcherservlet.png" alt="ds">
+<img width="600" src="https://docs.spring.io/spring-framework/docs/3.0.0.RC2/spring-framework-reference/html/images/mvc.png.pagespeed.ce.tmIzOTr1gg.png" alt="fc"><br>
+<img width="600" src="https://www.tutorialspoint.com/spring/images/spring_dispatcherservlet.png" alt="ds">
