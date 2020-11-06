@@ -39,7 +39,7 @@ Xml:
 It is also possible to mix or chain, more on this [here](https://docs.spring.io/spring-framework/docs/3.0.0.M3/spring-framework-reference/html/ch16s05.html).
 
 ## Error handling
-Because we are not using spring boot, but are rather augmenting a Java web application with Spring features we would actually need to use web.xml in this case.
+Because we are not using spring boot, but are rather augmenting a Java web application with Spring features we would actually need web.xml in this case.
 There is no Java Config equivalent for:  
 
     <error-page>
