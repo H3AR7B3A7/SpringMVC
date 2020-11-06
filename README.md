@@ -12,8 +12,34 @@ The dispatcher servlet dispatches requests and responses to registered handlers 
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/front-controller.png" alt="fc"><br>
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/dispatcher-servlet.png" alt="ds">
 
+### View Resolver
+Because all requests go through our dispatcher servlet we can also add a prefix and suffix to our views here.
+If we ever change the view layer we would just need to change the suffix in one location.  
+Java Config:
+
+    @Bean
+        public InternalResourceViewResolver viewResolver(){
+    
+            InternalResourceViewResolver vr = new InternalResourceViewResolver();
+            vr.setPrefix("/WEB-INF/");
+            vr.setSuffix(".jsp");
+    
+            return vr;
+        }
+        
+Xml:
+
+    <bean id="viewResolver"
+          class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+It is also possible to mix or chain, more on this [here](https://docs.spring.io/spring-framework/docs/3.0.0.M3/spring-framework-reference/html/ch16s05.html).
+
 ## Error handling
-Because we are not using spring boot, but are rather augmenting a Java web application with Spring features we would actually need to use web.xml in this case.
+Because we are not using spring boot, but are rather augmenting a Java web application with Spring features we would actually need web.xml in this case.
 There is no Java Config equivalent for:  
 
     <error-page>
