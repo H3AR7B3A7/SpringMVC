@@ -6,14 +6,14 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
-    <servlet-name>myServlet</servlet-name>
+    <servlet-name>my-servlet</servlet-name>
     <servlet-class>
       org.springframework.web.servlet.DispatcherServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>myServlet</servlet-name>
-    <url-pattern>*.htm</url-pattern>
+    <servlet-name>my-servlet</servlet-name>
+    <url-pattern>/</url-pattern>
   </servlet-mapping>
 
 </web-app>
