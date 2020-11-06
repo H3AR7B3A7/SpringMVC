@@ -20,7 +20,7 @@ public class AddController {
         AdditionService addition = new AdditionService();
 
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("result.jsp");
+        mv.setViewName("result");
         mv.addObject("result", addition.sum(i,j));
 
         return mv;
