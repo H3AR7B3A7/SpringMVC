@@ -12,6 +12,12 @@ The dispatcher servlet dispatches requests and responses to registered handlers 
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/front-controller.png" alt="fc"><br>
 <img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/dispatcher-servlet.png" alt="ds">
 
+## XML or JavaConfig
+We started off with a full XML-based configuration of the web application and the dispatcher servlet. Then we discarded the 'web.xml'
+and switched to using the annotated class 'MyWebInitializer'. After that we also changed out the -servlet.xml for the 'MyConfig' class.  
+[Here](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/WebApplicationInitializer.html)
+we can find more information on how to set up either an XML-based configuration, a code-based one or even a hybrid.
+
 ### View Resolver
 Because all requests go through our dispatcher servlet we can also add a prefix and suffix to our views here.
 If we ever change the view layer we would just need to change the suffix in one location.  
