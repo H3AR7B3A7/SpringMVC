@@ -7,7 +7,7 @@ This project goes against the principle of:
     Make JAR, not WAR!
                             -- Josh Long
 
-However, we will learn a lot about the inner workings of Spring. Also, there might be older projects in the future depending on this
+However, we will learn a lot about the inner workings of Spring. Also, there might be older projects we need to work on depending on this
 monolithic type of packaging. (Or projects that for some reason need to save on web space, or depend on some other advantages of .war.)
 
 ## Setup
