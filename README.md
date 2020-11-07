@@ -68,3 +68,9 @@ There is no Java Config equivalent for:
     </error-page>
     
 In this [example](https://www.baeldung.com/servlet-exceptions) we can see how to fetch the error message along with the status code and exception type.
+
+## More ...
+We will continue exploring The Spring Servlet Stack in two separate repositories to avoid confusion.  
+These repositories can be found here:
+- [XML-based](https://github.com/H3AR7B3A7/SpringServletStackXml)
+- [Code-based](https://github.com/H3AR7B3A7/SpringServletStackCode)
