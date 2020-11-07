@@ -1,9 +1,24 @@
 # Spring web MVC
 After exploring Java Enterprise, Servlets & JSPs I felt ready to return to Spring and dive deeper into what Spring MVC is all about.
-I didn't start this project with the Spring initializr though, but used the Maven 'archetype-web-app' option under Maven projects.  
-From what I understand, Spring hides some older project structure from the user, but in this project we will need access to the web.xml
+
+### 'WAR'ning
+This project goes against the principle of:
+
+    Make JAR, not WAR!
+                            -- Josh Long
+
+However, we will learn a lot about the inner workings of Spring. Also, there might be older projects in the future depending on this
+monolithic type of packaging. (Or projects that for some reason need to save on web space, or depend on some other advantages of .war.)
+
+## Setup
+We don't start this project with the Spring initializr though, but use the Maven 'archetype-web-app' option under Maven projects.
+We could also just make a maven project and enable web application support. In IntelliJ we navigate to:
+'File -> Project Structure -> Modules'. There, select your web facet and click the plus button.) 
+From what I understand, Spring hides some older project structure from the user, but to start off this project we will need access to the web.xml
 in the "webapp > WEB-INF" - file structure. It is where we can set up and configure our connections to the 'invisible' dispatcher servlet,
-the front-controller that has been doing all the hard work in our Spring projects without taking any credit.
+the front-controller that has been doing all the hard work in our Spring projects without taking any credit.  
+Be sure to check the [POM](https://github.com/H3AR7B3A7/SpringMVC/blob/master/pom.xml) to see common dependencies we will want to add to our project.
+When using the Spring Initializr, it includes some of these dependencies already.
 
 ## Dispatcher Servlet
 As its name suggests, it is a central dispatcher for HTTP request handlers/controllers, e.g. for web UI controllers or HTTP-based remote service exporters.
