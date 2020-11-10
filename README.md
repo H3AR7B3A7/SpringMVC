@@ -24,8 +24,8 @@ When using the Spring Initializr, it includes some of these dependencies already
 As its name suggests, it is a central dispatcher for HTTP request handlers/controllers, e.g. for web UI controllers or HTTP-based remote service exporters.
 The dispatcher servlet dispatches requests and responses to registered handlers for processing, providing convenient mapping and exception handling facilities.  
 <br>
-<img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/front-controller.png" alt="fc"><br>
-<img width="500" src="https://github.com/H3AR7B3A7/SpringMVC/blob/master/dispatcher-servlet.png" alt="ds">
+<img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringMVC/master/front-controller.png" alt="fc"><br>
+<img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringMVC/master/dispatcher-servlet.png" alt="ds">
 
 ## XML or JavaConfig
 We started off with a full XML-based configuration of the web application and the dispatcher servlet. Then we discarded the 'web.xml'
