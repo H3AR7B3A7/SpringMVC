@@ -19,7 +19,7 @@ public class AddController {
     public ModelAndView add(
             @RequestParam("t1") @Pattern(message = "That is not a whole number.", regexp = "-?[1-9]\\d*|0") String i,
             @RequestParam("t2") @Pattern(message = "That is not a whole number.", regexp = "-?[1-9]\\d*|0") String j,
-            HttpServletRequest request, HttpServletResponse response){
+            HttpServletRequest request, HttpServletResponse response) {
 
 //        int i = Integer.parseInt(request.getParameter("t1"));
 //        int j = Integer.parseInt(request.getParameter("t2"));
@@ -28,7 +28,7 @@ public class AddController {
 
         ModelAndView mv = new ModelAndView();
         mv.setViewName("result");
-        mv.addObject("result", addition.sum(Integer.parseInt(i),Integer.parseInt(j)));
+        mv.addObject("result", addition.sum(Integer.parseInt(i), Integer.parseInt(j)));
 
         return mv;
     }
